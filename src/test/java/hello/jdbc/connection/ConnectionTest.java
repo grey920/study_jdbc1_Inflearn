@@ -95,16 +95,7 @@ public class ConnectionTest {
     private void useDataSource( DataSource dataSource ) throws SQLException {
         Connection con1 = dataSource.getConnection();
         Connection con2 = dataSource.getConnection();
-        Connection con3 = dataSource.getConnection();
-        Connection con4 = dataSource.getConnection();
-        Connection con5 = dataSource.getConnection();
-        Connection con6 = dataSource.getConnection();
-        Connection con7 = dataSource.getConnection();
-        Connection con8 = dataSource.getConnection();
-        Connection con9 = dataSource.getConnection();
-        Connection con10 = dataSource.getConnection();
-        Connection con11 = dataSource.getConnection();
-
+        
         // 07:49:13.094 [main] INFO hello.jdbc.connection.ConnectionTest - connection=HikariProxyConnection@479920916 wrapping conn0: url=jdbc:h2:tcp://localhost/~/test user=SA, class=class com.zaxxer.hikari.pool.HikariProxyConnection
         // 07:49:13.095 [main] INFO hello.jdbc.connection.ConnectionTest - connection=HikariProxyConnection@1161322357 wrapping conn1: url=jdbc:h2:tcp://localhost/~/test user=SA, class=class com.zaxxer.hikari.pool.HikariProxyConnection
         log.info( "connection={}, class={}", con1, con1.getClass() );
